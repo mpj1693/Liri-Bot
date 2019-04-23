@@ -22,10 +22,20 @@ switch (command) {
     bands(parameter);
     break;
   case "spotify-this-song":
+  if(parameter == false){
+    parameter = "The Sign"
+    spotifyThis(parameter)
+  }else {
     spotifyThis(parameter);
+  }
     break;
   case "movie-this":
+  if(parameter == false){
+    parameter = "Mr. Nobody"
+    omdb(parameter)
+  }else {
     omdb(parameter);
+  }
     break;
   case "do-what-it-says":
     random(parameter);
@@ -37,8 +47,6 @@ switch (command) {
 function omdb(parameter) {
 
   var queryUrl = "http://www.omdbapi.com/?t=" + parameter + "&y=&plot=short&apikey=trilogy";
-
-  console.log(queryUrl);
 
   axios.get(queryUrl).then(
     function (response) {
@@ -62,7 +70,7 @@ function bands(parameter) {
     function (response) {
       console.log("Venue:  " + response.data[1].venue.name)
       console.log("Location:  " + (response.data[1].venue.city) + ", " + (response.data[1].venue.country))
-      console.log("Date & Time:  " + response.data[1].datetime)
+      console.log("Date:  " + moment(response.data[1].datetime).format('MM/DD/YYYY'))
     }
   )
 
