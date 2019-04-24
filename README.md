@@ -9,7 +9,7 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI will be a comm
 
 #### Bands-In-Town
 
-![Psychic-Game-Screenshot1](assets/images/capture1.PNG)
+![Psychic-Game-Screenshot1](assets/images/image1.PNG)
 
 `node liri.js concert-this <insert artist name>`
 
@@ -22,7 +22,7 @@ This will show the following information about the song in your terminanl/bash w
 
 #### Spotify
 
-![Psychic-Game-Screenshot1](assets/images/capture2.PNG)
+![Psychic-Game-Screenshot1](assets/images/image2.PNG)
 
 `node liri.js spotify-this-song <insert song title>`
 
@@ -34,14 +34,14 @@ This will show the following information about the song in your terminal/bash wi
 - The album that the song is from
 
 
-![Psychic-Game-Screenshot1](assets/images/capture5.PNG)
+![Psychic-Game-Screenshot1](assets/images/image5.PNG)
 
 If no song is provided then your program will default to "The Sign" by Ace of Base
 
 
 #### Movies
 
-![Psychic-Game-Screenshot1](assets/images/capture3.PNG)
+![Psychic-Game-Screenshot1](assets/images/image3.PNG)
 
 `node liri.js movie-this <insert movie title>`
 
@@ -57,14 +57,14 @@ This will output the following information to your terminal/bash window:
 - Actors in the movie.
 
 
-![Psychic-Game-Screenshot1](assets/images/capture6.PNG)
+![Psychic-Game-Screenshot1](assets/images/image6.PNG)
 
 If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
 
 #### Do What It Says
 
-![Psychic-Game-Screenshot1](assets/images/capture4.PNG)
+![Psychic-Game-Screenshot1](assets/images/image4.PNG)
 
 `node liri.js do-what-it-says`
 
